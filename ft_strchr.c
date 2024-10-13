@@ -6,11 +6,11 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 23:23:26 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/07 12:52:18 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:55:26 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -25,9 +25,8 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)s + i);
 }
-/*
-#include <stdio.h>
 
+/*
 int	main(void)
 {
 	char s[50] = "Hola, mundo!";

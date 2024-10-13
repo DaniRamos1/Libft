@@ -6,20 +6,20 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 17:02:13 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/07 12:46:53 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/10 12:38:59 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	p;
+	unsigned char	*p;
 
 	p = (unsigned char *)s;
 	while (n--)
 	{
-		if (*p == (unsigned char *)c)
+		if (*p == (unsigned char )c)
 			return (p);
 		p++;
 	}

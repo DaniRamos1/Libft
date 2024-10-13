@@ -6,11 +6,11 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:54:14 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/07 12:41:48 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/09 11:29:21 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

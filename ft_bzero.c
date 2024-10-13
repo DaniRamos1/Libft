@@ -6,11 +6,11 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 14:45:51 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/07 12:41:41 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/09 11:28:22 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

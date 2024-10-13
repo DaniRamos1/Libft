@@ -6,11 +6,11 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 23:01:39 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/07 12:58:01 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/10 12:38:12 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -30,8 +30,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (res);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char src[50] = "Hola, mundo!";

@@ -6,11 +6,11 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:49:39 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/07 12:46:22 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/09 11:33:08 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -19,8 +19,6 @@ int	ft_isprint(int c)
 	return (0);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	c;

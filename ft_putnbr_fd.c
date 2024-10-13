@@ -6,11 +6,11 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:10:38 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/07 12:51:38 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/12 04:15:32 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -38,3 +38,11 @@ void	ft_putnbr_fd(int n, int fd)
 		}
 	}
 }
+/*
+int main(void)
+{
+    ft_putnbr_fd(42, STDOUT_FILENO);
+    printf("\n");
+	return (0);
+}
+*/

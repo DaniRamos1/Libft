@@ -6,11 +6,11 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 12:33:27 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/07 12:58:25 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/09 11:52:26 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
@@ -22,8 +22,6 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	printf("%zu\n", ft_strlen("Hola, mundo!"));
