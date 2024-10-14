@@ -6,38 +6,11 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:50:31 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/12 04:06:11 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/14 10:53:59 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	count(long num);
-static char	*as(int len);
-static void	fill_num(char *r, long num, int len);
-
-char	*ft_itoa(int n)
-{
-	long	num;
-	int		len;
-	char	*r;
-
-	num = n;
-	len = count(num);
-	r = as(len);
-	if (!r)
-		return (NULL);
-	if (num < 0)
-	{
-		num = -num;
-		r[0] = '-';
-	}
-	else if (num == 0)
-		r[0] = '0';
-	fill_num(r, num, len);
-	r[len] = '\0';
-	return (r);
-}
 
 static char	*as(int len)
 {
@@ -73,6 +46,29 @@ static void	fill_num(char *r, long num, int len)
 		r[i--] = (num % 10) + '0';
 		num /= 10;
 	}
+}
+
+char	*ft_itoa(int n)
+{
+	long	num;
+	int		len;
+	char	*r;
+
+	num = n;
+	len = count(num);
+	r = as(len);
+	if (!r)
+		return (NULL);
+	if (num < 0)
+	{
+		num = -num;
+		r[0] = '-';
+	}
+	else if (num == 0)
+		r[0] = '0';
+	fill_num(r, num, len);
+	r[len] = '\0';
+	return (r);
 }
 /*
 int main()

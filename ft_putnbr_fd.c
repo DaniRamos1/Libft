@@ -6,7 +6,7 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:10:38 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/12 04:15:32 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/14 10:49:52 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,7 @@ void	ft_putnbr_fd(int n, int fd)
 /*
 int main(void)
 {
-    ft_putnbr_fd(42, STDOUT_FILENO);
+    ft_putnbr_fd(-2147483648, 1);
     printf("\n");
 	return (0);
-}
-*/
+}*/

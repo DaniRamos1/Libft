@@ -6,7 +6,7 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 16:08:45 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/10 12:40:47 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/14 10:55:27 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,4 @@ int	main(void)
 	src = "tardes";
 	printf("%d\n", ft_strlcat(dst, src, 15));
 	return (0);
-}
-*/
+}*/

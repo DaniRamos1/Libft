@@ -6,7 +6,7 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:47:54 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/12 04:35:54 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/14 10:55:50 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,4 @@ int	main(void)
 {
 	printf("%d\n", ft_strncmp("Buenas", "buen", 1));
 	return (0);
-}
-*/
+}*/

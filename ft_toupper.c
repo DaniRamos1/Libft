@@ -6,7 +6,7 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 22:59:02 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/09 11:56:55 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/14 10:56:23 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,8 @@ int	ft_toupper(int c)
 int	main(void)
 {
 	char	c;
+	
 	c = 'a';
-
-
 	printf("%c\n",ft_toupper(c));
-
 	return (0);
 }*/

@@ -6,44 +6,11 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 02:12:51 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/12 04:26:30 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/14 10:52:38 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	w_count(const char *str, char c);
-static char	*ft_fill(const char *str, int start, int end);
-static void	*ft_free(char **strs, int count);
-static void	ft_init(size_t *i, int *j, int *w);
-
-char	**ft_split(const char *s, char c)
-{
-	char	**r;
-	size_t	i;
-	int		j;
-	int		w;
-
-	ft_init(&i, &j, &w);
-	r = ft_calloc((w_count(s, c) + 1), sizeof(char *));
-	if (!r)
-		return (NULL);
-	while (i <= ft_strlen(s))
-	{
-		if (s[i] != c && w < 0)
-			w = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && w >= 0)
-		{
-			r[j] = ft_fill(s, w, i);
-			if (!(r[j]))
-				return (ft_free(r, j));
-			w = -1;
-			j++;
-		}
-		i++;
-	}
-	return (r);
-}
 
 static void	ft_init(size_t *i, int *j, int *word)
 {
@@ -105,10 +72,38 @@ static int	w_count(const char *str, char c)
 	}
 	return (count);
 }
+
+char	**ft_split(const char *s, char c)
+{
+	char	**r;
+	size_t	i;
+	int		j;
+	int		w;
+
+	ft_init(&i, &j, &w);
+	r = ft_calloc((w_count(s, c) + 1), sizeof(char *));
+	if (!r)
+		return (NULL);
+	while (i <= ft_strlen(s))
+	{
+		if (s[i] != c && w < 0)
+			w = i;
+		else if ((s[i] == c || i == ft_strlen(s)) && w >= 0)
+		{
+			r[j] = ft_fill(s, w, i);
+			if (!(r[j]))
+				return (ft_free(r, j));
+			w = -1;
+			j++;
+		}
+		i++;
+	}
+	return (r);
+}
 /*
 int main(void)
 {
-    printf("%i\n", w_count("buenas tardes", ' '));
+    printf("%i\n", ft_split("buenas tardes", ' '));
     return (0);
 }
 */

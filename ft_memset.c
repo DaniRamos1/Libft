@@ -6,7 +6,7 @@
 /*   By: danramos <danramos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 12:44:34 by danramos          #+#    #+#             */
-/*   Updated: 2024/10/12 03:49:08 by danramos         ###   ########.fr       */
+/*   Updated: 2024/10/14 10:54:42 by danramos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,4 @@ int	main(void)
 	ft_memset(str, '*', 5);
 	printf("%s\n", str);
 	return (0);
-}
-*/
+}*/
